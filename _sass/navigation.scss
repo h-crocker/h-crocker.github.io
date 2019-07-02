@@ -1,0 +1,67 @@
+// Navigation
+
+nav {
+  font-family: $sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+// Mobile Navigation
+
+.mobile-bottom-nav {
+  position: fixed;
+  height: $nav-height;
+  width: $full;
+  bottom: 0;
+  background-color: $background;
+  box-shadow: $bottom-nav-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-bottom-nav ul {
+  padding-left: 0;
+}
+
+.mobile-bottom-nav ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
+}
+
+.mobile-bottom-nav ul li:hover a {
+  color: $primary;
+}
+
+.mobile-bottom-nav ul li.active {
+  background: $nav-selected-bg;
+  animation: $nav-selected-fadein;
+}
+
+.mobile-bottom-nav ul li.active a {
+  color: $primary;
+}
+
+.mobile-bottom-nav ul li a {
+  color: $nav-foreground;
+  transition: $hover-anim;
+}
+
+// Media Queries
+@include small-phone {
+  .mobile-bottom-nav ul li {
+    padding: 6px 12px 6px 12px;
+  }
+
+  .mobile-bottom-nav ul li a {
+    font-size: 0.75em;
+  }
+}

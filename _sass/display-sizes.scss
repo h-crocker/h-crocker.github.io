@@ -1,0 +1,9 @@
+// Widths
+$small-phone-width: 340px;
+
+// Rules
+@mixin small-phone {
+  @media (max-width: #{$small-phone-width}) {
+    @content;
+  }
+}
