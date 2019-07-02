@@ -1,0 +1,14 @@
+<ul>
+    <li {% if page.title == "Home" %}class="active"{% endif %}>
+    <a href="{{ site.url }}">Home</a>
+    </li>
+    <li {% if page.title == "About" %}class="active"{% endif %}>
+    <a href="{{ site.url }}/about/">About</a>
+    </li>
+    <li {% if page.title == "Projects" %}class="active"{% endif %}>
+    <a href="{{ site.url }}/projects/">Projects</a>
+    </li>
+    <li {% if page.title == "Blog" %}class="active"{% endif %}>
+    <a href="{{ site.url }}/blog/">Blog</a>
+    </li>
+</ul>
