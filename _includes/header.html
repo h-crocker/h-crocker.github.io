@@ -1,0 +1,9 @@
+<header>
+    <h1 id="">
+        {% if page.title == "Home" %}
+            {{ site.title }}
+        {% else %}
+            {{ page.title }}
+        {% endif %}
+    </h1>
+</header>

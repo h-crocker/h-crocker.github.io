@@ -1,0 +1,68 @@
+body {
+  background-color: $background;
+}
+
+// Page Title
+
+header h1 {
+  font-family: $serif;
+  font-weight: $normal;
+  text-align: center;
+  color: $foreground;
+}
+
+// Navigation
+
+nav {
+  font-family: $sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+// Mobile Navigation
+
+.mobile-bottom-nav {
+  position: fixed;
+  height: $nav-height;
+  width: $full;
+  bottom: 0;
+  background-color: $background;
+  box-shadow: $bottom-nav-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-bottom-nav ul {
+  padding-left: 0;
+}
+
+.mobile-bottom-nav ul li {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  border-radius: 50px;
+}
+
+.mobile-bottom-nav ul li:hover a {
+  color: $primary;
+}
+
+.mobile-bottom-nav ul li.active {
+  background: $nav-selected-bg;
+}
+
+.mobile-bottom-nav ul li.active a {
+  color: $primary;
+}
+
+.mobile-bottom-nav ul li a {
+  color: $nav-foreground;
+  transition: $hover-anim;
+}

@@ -1,0 +1,16 @@
+<nav class="mobile-bottom-nav">
+    <ul>
+        <li {% if page.title == "Home" %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}index.html">Home</a>
+        </li>
+        <li {% if page.title == "About" %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}about.html">About</a>
+        </li>
+        <li {% if page.title == "Projects" %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}projects.html">Projects</a>
+        </li>
+        <li {% if page.title == "Blog" %}class="active"{% endif %}>
+            <a href="{{ site.baseurl }}blog.html">Blog</a>
+        </li>
+    </ul>
+</nav>
