@@ -22,4 +22,9 @@ $full: 100%;
 $bottom-nav-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
 
 // Transitions
+@keyframes bg_to_selected {
+  from {background-color: $background;}
+  to {background-color: $nav-selected-bg;}
+}
+$nav-selected-fadein: bg_to_selected 700ms;
 $hover-anim: linear 300ms;
