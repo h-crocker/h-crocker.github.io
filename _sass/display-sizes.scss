@@ -1,9 +1,36 @@
 // Widths
 $small-phone-width: 340px;
+$phone-width: 470px;
+$tablet-width: 900px;
 
 // Rules
 @mixin small-phone {
-  @media (max-width: #{$small-phone-width}) {
+  @media (max-width: #{$small-phone-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (min-width: #{$small-phone-width}) and (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin all-phones {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width}) {
     @content;
   }
 }

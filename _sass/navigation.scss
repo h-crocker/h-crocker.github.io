@@ -2,57 +2,58 @@
 
 nav {
   font-family: $sans-serif;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-// Mobile Navigation
-
-.mobile-bottom-nav {
-  position: fixed;
-  height: $nav-height;
-  width: $full;
-  bottom: 0;
   background-color: $background;
-  box-shadow: $bottom-nav-shadow;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mobile-bottom-nav ul {
+nav ul {
+  list-style: none;
   padding-left: 0;
 }
 
-.mobile-bottom-nav ul li {
+nav ul li a {
+  text-decoration: none;
+  color: $nav-foreground;
+  transition: $hover-anim;
+}
+
+nav ul li {
   text-align: center;
   display: inline-block;
   padding: 8px 16px 8px 16px;
   border-radius: 50px;
 }
 
-.mobile-bottom-nav ul li:hover a {
+nav ul li:hover a {
   color: $primary;
 }
 
-.mobile-bottom-nav ul li.active {
+nav ul li.active {
   background: $nav-selected-bg;
   animation: $nav-selected-fadein;
 }
 
-.mobile-bottom-nav ul li.active a {
+nav ul li.active a {
   color: $primary;
 }
 
-.mobile-bottom-nav ul li a {
-  color: $nav-foreground;
-  transition: $hover-anim;
+// Tablet Navigation
+.tablet-top-nav {
+  position: absolute;
+  height: $tablet-top-nav-height;
+  width: $full;
+}
+
+// Mobile Navigation
+
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  height: $bottom-nav-height;
+  width: $full;
+  box-shadow: $bottom-nav-shadow;
 }
 
 // Media Queries
@@ -63,5 +64,26 @@ nav ul li a {
 
   .mobile-bottom-nav ul li a {
     font-size: 0.75em;
+  }
+}
+
+@include all-phones {
+  .tablet-top-nav {
+    display: none;
+  }
+}
+
+@include tablet {
+  .mobile-bottom-nav {
+    display: none;
+  }
+}
+
+@include desktop {
+  .tablet-top-nav {
+    display: none;
+  }
+  .mobile-bottom-nav {
+    display: none;
   }
 }

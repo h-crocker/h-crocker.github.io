@@ -14,3 +14,13 @@ header h1 {
     font-size: 1.75em;
   }
 }
+
+body {
+  font-family: $serif;
+}
+
+@include all-phones {
+  body {
+    padding-bottom: $bottom-nav-height + 1em;
+  }
+}
