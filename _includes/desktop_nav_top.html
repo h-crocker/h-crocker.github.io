@@ -1,0 +1,11 @@
+<nav class="desktop-top-nav">
+    <h1>
+        {% if page.title == "Home" %}
+        {{ site.title }}
+        {% else %}
+        {{ page.title }}
+        {% endif %}
+    </h1>
+
+    {%- include nav_list.html -%}
+</nav>

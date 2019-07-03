@@ -16,11 +16,15 @@ $bold: 700;
 
 // Sizes
 $bottom-nav-height: 3.34em;
-$tablet-top-nav-height: 2em;
+$tablet-top-nav-height: $bottom-nav-height;
+$header-height: 80px;
+$desktop-top-nav-height: $header-height;
 $full: 100%;
 
 // Shadows
 $bottom-nav-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+$hide-top-nav-shadow: 0px -20px 18px 0px rgba(0, 0, 0, 0.3);
+$top-nav-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.3);
 
 // Transitions
 @keyframes bg_to_selected {
@@ -28,4 +32,5 @@ $bottom-nav-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
   to {background-color: $nav-selected-bg;}
 }
 $nav-selected-fadein: bg_to_selected 700ms;
-$hover-anim: linear 300ms;
+$hover-anim: color linear 300ms;
+$box-shadow-anim: box-shadow linear 250ms;

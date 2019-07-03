@@ -2,6 +2,15 @@ body {
   background-color: $background;
 }
 
+header {
+  background-color: $background;
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  width: $full;
+  height: $header-height;
+}
+
 header h1 {
   font-family: $serif;
   font-weight: $normal;
@@ -19,8 +28,26 @@ body {
   font-family: $serif;
 }
 
+.wrapper {
+  padding: 0 1em;
+}
+
+// Media Queries
+
 @include all-phones {
   body {
     padding-bottom: $bottom-nav-height + 1em;
+  }
+}
+
+@include desktop {
+  header {
+    display: none;
+  }
+  body {
+    padding-top: $desktop-top-nav-height;
+  }
+  .desktop-top-nav {
+    margin-top: -$desktop-top-nav-height;
   }
 }
