@@ -1,6 +1,6 @@
 // Base Colours
 $primary: #23c9ff;
-$secondary: #f45b69;
+$secondary: #2e1760;
 $background: #fbfbfb;
 $foreground: #040f16;
 
@@ -32,8 +32,8 @@ $top-nav-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.3);
 $top-nav-shadow-light: 0px 4px 18px 0px rgba(255, 255, 255, 0.3);
 $main-content-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.3);
 $main-content-shadow-light: 0px 2px 12px 0px rgba(255, 255, 255, 0.5);
-$primary-content-shadow: 0px 2px 4px 0px rgba(35, 201, 255, 0.5);
-$secondary-content-shadow: 0px 2px 4px 0px rgba(244, 91, 105, 0.5);
+$primary-content-shadow: 0px 2px 4px 0px rgba($primary, 0.5);
+$secondary-content-shadow: 0px 2px 4px 0px rgba($secondary, 0.5);
 
 // Gradients
 @mixin gradient-background($color) {
