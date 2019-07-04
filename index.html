@@ -4,3 +4,22 @@ title: Home
 subtitle: Computer Scientist
 portrait_rel: /assets/img/me.jpg
 ---
+
+<!-- latest posts -->
+<div class="latest-posts">
+
+    <h2>Latest Posts</h2>
+
+    <ul>
+
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+    <a class="more-button" href="{{ site.url }}/blog/">More Posts</a>
+
+</div>

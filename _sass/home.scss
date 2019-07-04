@@ -1,17 +1,3 @@
-// Content
-.content {
-  font-family: $serif;
-  padding: 16px;
-}
-
-h2 {
-  color: $content-foreground;
-}
-
-.more-button {
-  right: 0;
-}
-
 // Header Modifications
 header {
   background-color: $transparent;
@@ -46,7 +32,7 @@ header h1 {
     z-index: 1;
     font-family: $serif;
     font-weight: $normal;
-    color: $nav-selected-bg;
+    color: $content-foreground-light;
     width: 140px;
     margin: auto auto auto 16px;
   }
@@ -67,12 +53,13 @@ header h1 {
 }
 
 .top-nav ul li.active {
+  background-color: $content-foreground-lighter;
   animation: $nav-selected-fadein-home;
   transition: background-color linear 300ms;
 }
 
 .top-nav ul li a {
-  color: $nav-selected-bg;
+  color: $content-foreground-light;
 }
 
 .top-nav ul li:hover a {
@@ -96,7 +83,7 @@ header h1 {
 }
 
 .top-nav ul li.active:hover {
-  background-color: $nav-selected-bg;
+  background-color: $content-foreground-lighter;
 }
 
 .scroll-top-home {
@@ -165,7 +152,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $nav-selected-bg;
+  color: $content-foreground-light;
 }
 
 .subheader-skills svg {
@@ -173,7 +160,7 @@ header h1 {
   text-align: center;
   font-family: $serif;
   padding-right: 8px;
-  fill: $nav-selected-bg;
+  fill: $content-foreground-light;
 }
 
 .subheader-skills a {

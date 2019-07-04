@@ -7,8 +7,10 @@ $foreground: #040f16;
 // UI Colours
 $transparent: rgba(255, 255, 255, 0);
 $nav-foreground: lighten(desaturate($foreground, 80%), 50%);
-$nav-selected-bg: lighten($primary, 38%);
+$nav-selected-bg: rgba($primary, 0.1);
 $content-foreground: lighten(desaturate($foreground, 80%), 30%);
+$content-foreground-light: rgba($background, 0.9);
+$content-foreground-lighter: rgba($background, 0.85);
 
 // Fonts
 $serif: "Roboto Slab", serif;
@@ -48,7 +50,7 @@ $secondary-content-shadow: 0px 2px 4px 0px rgba($secondary, 0.5);
 }
 @keyframes bg_to_selected_home {
   from {background-color: $transparent;}
-  to {background-color: $nav-selected-bg;}
+  to {background-color: $content-foreground-lighter;}
 }
 $nav-selected-fadein: bg_to_selected 700ms;
 $nav-selected-fadein-home: bg_to_selected_home 1s;

@@ -30,6 +30,18 @@ header h1 {
   padding: 0 1em;
 }
 
+// Content
+.content {
+  font-family: $serif;
+  padding: 16px;
+}
+
+h2 {
+  color: $content-foreground;
+}
+
+
+
 // Media Queries
 @include all-phones {
   body {

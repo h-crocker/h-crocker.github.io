@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {%- include head.html -%}
+
+    <body>
+
+        <!-- HEADER / NAVIGATION -->
+
+        {%- include header.html -%}
+        {%- include nav_bottom.html -%}
+        {%- include tablet_nav_top.html -%}
+        {%- include desktop_nav_top.html -%}
+
+        <!-- SCRIPTS -->
+        <script src="{{ site.url }}/assets/js/sticky-scroll-style.js"></script>
+
+        <!-- PAGE CONTENT -->
+
+        <div class="wrapper {{ page.title | downcase }}">
+            <div class="content-wrapper">
+
+                {{ content }}
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+        {%- include footer.html -%}
+
+    </body>
+
+</html>
