@@ -175,7 +175,7 @@ header h1 {
     margin-top: -19px;
     background-color: $secondary;
     box-shadow: $secondary-content-shadow;
-    border-top: 1px solid lighten($secondary, 20%);
+    border-top: 1px solid lighten($secondary, 10%);
   }
 
   .subheader-skills svg {
