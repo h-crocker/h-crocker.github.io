@@ -13,7 +13,13 @@
     </title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css">
+
+    {% if page.title == "Home" %}
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/home.css">
+    {% else %}
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+    {% endif %}
+
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Slab&display=swap" rel="stylesheet">
 </head>

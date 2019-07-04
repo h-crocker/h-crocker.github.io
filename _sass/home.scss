@@ -1,0 +1,112 @@
+// Header Modifications
+header {
+  background-color: $transparent;
+}
+
+header h1 {
+ color: $background;
+}
+
+@include home {
+  .header-background {
+    z-index: 0;
+    top: $subheader-top-margin;
+    margin-left: -1em;
+    position: absolute;
+    height: $subheader-height + $header-height;
+    width: $full;
+    background: $primary;
+  }
+
+  .subheader {
+    position: relative;
+    display: flex;
+    vertical-align: center;
+    height: $subheader-height;
+    width: $full;
+    top: $subheader-top-margin;
+  }
+
+  .subheader h1 {
+    position: relative;
+    z-index: 1;
+    font-family: $serif;
+    font-weight: $normal;
+    color: $nav-selected-bg;
+    width: 140px;
+    margin: auto auto auto 16px;
+  }
+
+  .subheader img {
+    width: $subheader-height - 32px;
+    height: $subheader-height - 32px;
+    box-shadow: $main-content-shadow-light;
+    border-radius: 75px;
+    margin: auto 16px auto auto;
+  }
+}
+
+// Header Modifications Tablet View
+.tablet-top-nav {
+  transition: $home-nav-anim;
+  background: $primary;
+}
+
+.tablet-top-nav ul li.active {
+  animation: $nav-selected-fadein-home;
+  transition: background-color linear 300ms;
+}
+
+.tablet-top-nav ul li a {
+  color: $nav-selected-bg;
+}
+
+.tablet-top-nav ul li:hover a {
+  color: $background;
+}
+
+.tablet-top-nav ul li.active:hover a {
+  color: $primary;
+}
+
+.tablet-top-nav ul li.active:hover {
+  background-color: $background;
+}
+
+.scroll-top-home {
+  background: $background;
+}
+
+.scroll-top-home ul li a {
+  color: $nav-foreground;
+}
+
+.tablet-top-nav ul li:hover a {
+  color: $primary;
+}
+
+.tablet-top-nav ul li.active:hover a {
+  color: $primary;
+}
+
+.tablet-top-nav ul li.active:hover {
+  background-color: $nav-selected-bg;
+}
+
+@include tablet {
+  header {
+    background-color: $primary;
+  }
+
+  @include home {
+    .header-background {
+      height: $subheader-height + $header-height + 54px;
+    }
+
+    .subheader {
+      top: -16px;
+    }
+  }
+}
+
+// Content

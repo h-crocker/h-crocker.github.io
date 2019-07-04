@@ -2,30 +2,28 @@ body {
   background-color: $background;
 }
 
+h1 {
+  font-size: 1.75em;
+}
+
 header {
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
   background-color: $background;
   position: relative;
   z-index: 20;
-  display: inline-block;
   width: $full;
   height: $header-height;
 }
 
 header h1 {
+  margin: 0;
   font-family: $serif;
   font-weight: $normal;
   text-align: center;
   color: $foreground;
-}
-
-@include small-phone {
-  header h1 {
-    font-size: 1.75em;
-  }
-}
-
-body {
-  font-family: $serif;
 }
 
 .wrapper {
@@ -33,7 +31,6 @@ body {
 }
 
 // Media Queries
-
 @include all-phones {
   body {
     padding-bottom: $bottom-nav-height + 1em;

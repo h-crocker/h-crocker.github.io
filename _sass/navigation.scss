@@ -1,5 +1,4 @@
 // Navigation
-
 nav {
   z-index: 10;
   background-color: $background;
@@ -43,7 +42,6 @@ nav ul li.active a {
 }
 
 // Tablet Navigation
-
 .tablet-top-nav {
   position: sticky;
   top: 0;
@@ -55,7 +53,6 @@ nav ul li.active a {
 }
 
 // Desktop Navigation
-
 .desktop-top-nav {
   display: flex;
   position: fixed;
@@ -77,12 +74,11 @@ nav ul li.active a {
   color: $foreground;
 }
 
-.scroll-box-shadow {
+.scroll-top {
   box-shadow: $top-nav-shadow;
 }
 
 // Mobile Navigation
-
 .mobile-bottom-nav {
   position: fixed;
   bottom: 0;
@@ -92,7 +88,6 @@ nav ul li.active a {
 }
 
 // Media Queries
-
 @include small-phone {
   .mobile-bottom-nav ul li {
     padding: 6px 12px 6px 12px;

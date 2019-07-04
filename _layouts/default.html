@@ -12,9 +12,12 @@
         {%- include tablet_nav_top.html -%}
         {%- include desktop_nav_top.html -%}
 
+        <!-- SCRIPTS -->
+        <script src="{{ site.url }}/assets/js/sticky-scroll-style.js"></script>
+
         <!-- PAGE CONTENT -->
 
-        <div class="wrapper">
+        <div class="wrapper {{ page.title | downcase }}">
 
             {{ content }}
 
@@ -23,9 +26,6 @@
         <!-- FOOTER -->
 
         {%- include footer.html -%}
-
-        <!-- SCRIPTS -->
-        <script src="{{ site.url }}/js/scroll-boxshadow.js"></script>
 
     </body>
 

@@ -4,6 +4,7 @@ $background: #fbfbfb;
 $foreground: #040f16;
 
 // UI Colours
+$transparent: rgba(255, 255, 255, 0);
 $nav-foreground: lighten(desaturate($foreground, 80%), 50%);
 $nav-selected-bg: lighten($primary, 38%);
 
@@ -17,7 +18,9 @@ $bold: 700;
 // Sizes
 $bottom-nav-height: 3.34em;
 $tablet-top-nav-height: $bottom-nav-height;
-$header-height: 80px;
+$header-height: 70px;
+$subheader-height: 120px;
+$subheader-top-margin: -((70px - 32.2px) / 2);
 $desktop-top-nav-height: $header-height;
 $full: 100%;
 
@@ -25,12 +28,33 @@ $full: 100%;
 $bottom-nav-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
 $hide-top-nav-shadow: 0px -20px 18px 0px rgba(0, 0, 0, 0.3);
 $top-nav-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.3);
+$main-content-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.3);
+$main-content-shadow-light: 0px 2px 12px 0px rgba(255, 255, 255, 0.3);
 
+// Gradients
+@mixin gradient-background($color) {
+  background: $color;
+  background: linear-gradient(140deg, $color 0%, lighten($color, 10%) 30%, lighten($color, 25%) 100%);
+}
 // Transitions
 @keyframes bg_to_selected {
   from {background-color: $background;}
   to {background-color: $nav-selected-bg;}
 }
+@keyframes bg_to_selected_home {
+  from {background-color: $transparent;}
+  to {background-color: $nav-selected-bg;}
+}
 $nav-selected-fadein: bg_to_selected 700ms;
+$nav-selected-fadein-home: bg_to_selected_home 1s;
+$background-anim: background-color linear 300ms;
 $hover-anim: color linear 300ms;
+$home-nav-anim: background-color linear 200ms, box-shadow linear 250ms;
 $box-shadow-anim: box-shadow linear 250ms;
+
+// Rules
+@mixin home {
+  .home {
+    @content;
+  }
+}
