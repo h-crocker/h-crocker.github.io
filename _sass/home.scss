@@ -158,15 +158,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 0;
-  height: 32px;
-  margin-top: -34px;
-  background-color: $secondary;
   color: $nav-selected-bg;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  box-shadow: $secondary-content-shadow;
-  padding-left: 8px;
 }
 
 .subheader-skills svg {
@@ -175,4 +167,61 @@ header h1 {
   font-family: $serif;
   padding-right: 8px;
   fill: $nav-selected-bg;
+}
+
+.subheader-skills a {
+  height: 24px;
+}
+
+@include all-phones {
+  .subheader-skills {
+    height: 48px;
+    width: 100%;
+    left: 0;
+    margin-top: -19px;
+    background-color: $secondary;
+    box-shadow: $secondary-content-shadow;
+  }
+
+  .subheader-skills svg {
+    padding-right: 16px;
+  }
+
+  .content {
+    margin-top: 42px;
+  }
+}
+
+@include tablet {
+  .subheader-skills {
+    top: $subheader-height;
+    right: 136px;
+    margin-top: $subheader-top-margin;
+    height: $subheader-height;
+  }
+}
+
+@include desktop {
+  .subheader-skills {
+    top: $desktop-top-nav-height;
+    right: 136px;
+    margin-top: $subheader-top-margin;
+    height: $subheader-height;
+  }
+}
+
+@include xl {
+  .subheader-skills {
+    left: 50%;
+    margin-left: -512px;
+    top: $desktop-top-nav-height;
+    width: $xl;
+    margin-top: $subheader-top-margin;
+    height: $subheader-height;
+    justify-content: right;
+  }
+  .spacer {
+    height: 24px;
+    width: 136px;
+  }
 }
