@@ -8,6 +8,7 @@ $foreground: #040f16;
 $transparent: rgba(255, 255, 255, 0);
 $nav-foreground: lighten(desaturate($foreground, 80%), 50%);
 $nav-selected-bg: lighten($primary, 38%);
+$content-foreground: lighten(desaturate($foreground, 80%), 30%);
 
 // Fonts
 $serif: "Roboto Slab", serif;

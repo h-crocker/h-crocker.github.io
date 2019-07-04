@@ -1,8 +1,15 @@
 // Content
-@include home {
-  .content {
-    font-family: $serif;
-  }
+.content {
+  font-family: $serif;
+  padding: 16px;
+}
+
+h2 {
+  color: $content-foreground;
+}
+
+.more-button {
+  right: 0;
 }
 
 // Header Modifications
