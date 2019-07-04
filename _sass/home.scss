@@ -8,10 +8,10 @@ header h1 {
 }
 
 @include home {
-  .header-background {
+  .subheader-background {
     z-index: 0;
     top: $subheader-top-margin;
-    margin-left: -1em;
+    left: 0;
     position: absolute;
     height: $subheader-height + $header-height;
     width: $full;
@@ -86,7 +86,7 @@ header h1 {
 }
 
 .scroll-top-home {
-  background: $background;
+  background-color: $background;
 }
 
 .scroll-top-home ul li a {
@@ -96,11 +96,16 @@ header h1 {
 // Header Modifications Tablet View
 @include tablet {
   header {
+    transition: $home-nav-anim;
     background-color: $primary;
   }
 
+  .scroll-top-home-header {
+    background-color: $background;
+  }
+
   @include home {
-    .header-background {
+    .subheader-background {
       height: $subheader-height + $header-height + 54px;
     }
 
@@ -126,7 +131,7 @@ header h1 {
   }
 
   @include home {
-    .header-background {
+    .subheader-background {
       height: $subheader-height + $desktop-top-nav-height;
     }
 
