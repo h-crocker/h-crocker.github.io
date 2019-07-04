@@ -2,6 +2,7 @@
 $small-phone-width: 340px;
 $phone-width: 470px;
 $tablet-width: 900px;
+$xl: 1024px;
 
 // Rules
 @mixin small-phone {
@@ -31,6 +32,12 @@ $tablet-width: 900px;
 
 @mixin desktop {
   @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl}) {
     @content;
   }
 }

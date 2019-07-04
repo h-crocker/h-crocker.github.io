@@ -53,8 +53,12 @@ nav ul li.active a {
 }
 
 // Desktop Navigation
-.desktop-top-nav {
+.nav-wrapper {
   display: flex;
+}
+
+.desktop-top-nav {
+  display: block;
   position: fixed;
   width: $full;
   height: $desktop-top-nav-height;
@@ -122,5 +126,8 @@ nav ul li.active a {
   }
   .mobile-bottom-nav {
     display: none;
+  }
+  .desktop-top-nav {
+    margin-top: -$desktop-top-nav-height;
   }
 }
