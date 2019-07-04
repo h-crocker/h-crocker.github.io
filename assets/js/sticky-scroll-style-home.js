@@ -9,19 +9,19 @@ window.onscroll = function () {
     }
 
     // Tablet
-    if (document.documentElement.scrollTop > 70) {
+    if (document.documentElement.scrollTop > 65) {
         if (!mTabletNav[0].classList.contains("scroll-top"))
             mTabletNav[0].classList.add("scroll-top");
-    } else if (document.documentElement.scrollTop < 70) {
+    } else if (document.documentElement.scrollTop < 65) {
         if (mTabletNav[0].classList.contains("scroll-top"))
             mTabletNav[0].classList.remove("scroll-top");
     }
 
     // Tablet Home
-    if (document.documentElement.scrollTop > 220) {
+    if (document.documentElement.scrollTop > 180) {
         if (!mTabletNav[0].classList.contains("scroll-top-home"))
             mTabletNav[0].classList.add("scroll-top-home");
-    } else if (document.documentElement.scrollTop < 220) {
+    } else if (document.documentElement.scrollTop < 180) {
         if (mTabletNav[0].classList.contains("scroll-top-home"))
             mTabletNav[0].classList.remove("scroll-top-home");
     }
