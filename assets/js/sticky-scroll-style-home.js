@@ -17,11 +17,15 @@ window.onscroll = function () {
             mTabletNav[0].classList.remove("scroll-top");
     }
 
-    // Tablet Home
+    // Home
     if (document.documentElement.scrollTop > 180) {
+        if (!mDesktopNav[0].classList.contains("scroll-top-home"))
+            mDesktopNav[0].classList.add("scroll-top-home");
         if (!mTabletNav[0].classList.contains("scroll-top-home"))
             mTabletNav[0].classList.add("scroll-top-home");
     } else if (document.documentElement.scrollTop < 180) {
+        if (mDesktopNav[0].classList.contains("scroll-top-home"))
+            mDesktopNav[0].classList.remove("scroll-top-home");
         if (mTabletNav[0].classList.contains("scroll-top-home"))
             mTabletNav[0].classList.remove("scroll-top-home");
     }

@@ -46,31 +46,43 @@ header h1 {
   }
 }
 
-// Header Modifications Tablet View
-.tablet-top-nav {
+// Header Modifications Top Nav
+.top-nav {
   transition: $home-nav-anim;
   background: $primary;
 }
 
-.tablet-top-nav ul li.active {
+.top-nav ul li.active {
   animation: $nav-selected-fadein-home;
   transition: background-color linear 300ms;
 }
 
-.tablet-top-nav ul li a {
+.top-nav ul li a {
   color: $nav-selected-bg;
 }
 
-.tablet-top-nav ul li:hover a {
+.top-nav ul li:hover a {
   color: $background;
 }
 
-.tablet-top-nav ul li.active:hover a {
+.top-nav ul li.active:hover a {
   color: $primary;
 }
 
-.tablet-top-nav ul li.active:hover {
+.top-nav ul li.active:hover {
   background-color: $background;
+}
+
+.top-nav ul li:hover a {
+  color: $primary;
+}
+
+.top-nav ul li.active:hover a {
+  color: $primary;
+}
+
+.top-nav ul li.active:hover {
+  background-color: $nav-selected-bg;
 }
 
 .scroll-top-home {
@@ -81,18 +93,7 @@ header h1 {
   color: $nav-foreground;
 }
 
-.tablet-top-nav ul li:hover a {
-  color: $primary;
-}
-
-.tablet-top-nav ul li.active:hover a {
-  color: $primary;
-}
-
-.tablet-top-nav ul li.active:hover {
-  background-color: $nav-selected-bg;
-}
-
+// Header Modifications Tablet View
 @include tablet {
   header {
     background-color: $primary;
@@ -101,6 +102,32 @@ header h1 {
   @include home {
     .header-background {
       height: $subheader-height + $header-height + 54px;
+    }
+
+    .subheader {
+      top: -16px;
+    }
+  }
+}
+
+// Header Modifications Desktop View
+.desktop-top-nav h1 {
+  transition: $hover-anim;
+  color: $background;
+}
+
+.desktop-top-nav.scroll-top-home h1 {
+  color: $foreground;
+}
+
+@include desktop {
+  header {
+    background-color: $primary;
+  }
+
+  @include home {
+    .header-background {
+      height: $subheader-height + $desktop-top-nav-height;
     }
 
     .subheader {
