@@ -74,7 +74,7 @@ header h1 {
 }
 
 .top-nav ul li:hover a {
-  color: $primary;
+  color: $background;
 }
 
 .top-nav ul li.active:hover a {
@@ -91,6 +91,10 @@ header h1 {
 
 .scroll-top-home ul li a {
   color: $nav-foreground;
+}
+
+.scroll-top-home ul li:hover a {
+  color: $primary;
 }
 
 // Header Modifications Tablet View
