@@ -1,3 +1,10 @@
+// Content
+@include home {
+  .content {
+    font-family: $serif;
+  }
+}
+
 // Header Modifications
 header {
   background-color: $transparent;
@@ -16,12 +23,12 @@ header h1 {
     height: $subheader-height + $header-height;
     width: $full;
     background: $primary;
+    box-shadow: $primary-content-shadow;
   }
 
   .subheader {
     position: relative;
     display: flex;
-    vertical-align: center;
     height: $subheader-height;
     width: $full;
     top: $subheader-top-margin;
@@ -145,4 +152,27 @@ header h1 {
   }
 }
 
-// Content
+// Skills
+.subheader-skills {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  height: 32px;
+  margin-top: -34px;
+  background-color: $secondary;
+  color: $nav-selected-bg;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: $secondary-content-shadow;
+  padding-left: 8px;
+}
+
+.subheader-skills svg {
+  position: relative;
+  text-align: center;
+  font-family: $serif;
+  padding-right: 8px;
+  fill: $nav-selected-bg;
+}

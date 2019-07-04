@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!-- subheader -->
 <div class="subheader-background"></div>
 
 <div class="subheader">
@@ -13,6 +14,15 @@ layout: default
     <img src="{{ site.url }}{{ page.portrait_rel }}">
 </div>
 
+<div class="subheader-skills">
+    {%- include svg/cpp.html -%}
+    {%- include svg/java.html -%}
+    {%- include svg/python.html -%}
+    {%- include svg/javascript.html -%}
+    {%- include svg/dots-horizontal.html -%}
+</div>
+
+<!-- content -->
 <div class="content">
 
     {{ content }}
