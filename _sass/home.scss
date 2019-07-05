@@ -212,7 +212,7 @@ header h1 {
     width: $xl;
     margin-top: $subheader-top-margin;
     height: $subheader-height;
-    justify-content: right;
+    justify-content: flex-end;
   }
   .spacer {
     height: 24px;
