@@ -98,6 +98,11 @@ header h1 {
   color: $primary;
 }
 
+.scroll-top-home ul li.active {
+  animation: $nav-selected-fadein;
+  background: $nav-selected-bg;
+}
+
 // Header Modifications Tablet View
 @include tablet {
   header {
