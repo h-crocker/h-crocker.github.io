@@ -12,9 +12,9 @@ portrait_rel: /assets/img/me.jpg
 
     <ul class="card-list">
 
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:4 %}
         <a href="{{ site.url }}{{ post.url }}">
-            <li class="card">
+            <li class="card card-{{ forloop.index }}">
                 <h1 class="card-title">
                     {{ post.title }}
                 </h1>
@@ -57,3 +57,6 @@ portrait_rel: /assets/img/me.jpg
     </div>
 
 </div>
+
+<!-- scripts -->
+<!-- <script src="{{ site.url }}/assets/js/line-clamping.js"></script> -->

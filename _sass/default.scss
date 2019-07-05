@@ -45,6 +45,12 @@ header h1 {
   font-family: $sans-serif;
 }
 
+@include all-phones {
+  .content {
+    padding: 4px;
+  }
+}
+
 // Cards
 .card-list {
   list-style: none;
@@ -64,7 +70,6 @@ header h1 {
   border-radius: 20px;
   margin-bottom: 1em;
   box-shadow: $card-shadow;
-  max-width: 400px;
 }
 
 .card-title {
@@ -83,6 +88,7 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
+  width: $full;
 }
 
 .card-title, .card-date, .read-post {
@@ -111,6 +117,24 @@ header h1 {
 
 .card-flex-align svg {
   fill: $primary;
+}
+
+@media (min-width: 700px) {
+  .card-list {
+    column-count: 2;
+  }
+}
+
+@media (min-width: #{$phone-width}) and (max-width: #{700px - 1px}) {
+  .card-4 {
+    display: none;
+  }
+}
+
+@include all-phones {
+  .card-3, .card-4 {
+    display: none;
+  }
 }
 
 // Buttons
