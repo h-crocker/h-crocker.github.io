@@ -8,18 +8,47 @@ portrait_rel: /assets/img/me.jpg
 <!-- latest posts -->
 <div class="latest-posts">
 
-    <h2>Latest Posts</h2>
+    <h1 class="section-title">Latest Posts</h1>
 
-    <ul>
+    <ul class="card-list">
 
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li>
+        {% for post in site.posts limit:3 %}
+        <a href="{{ site.url }}{{ post.url }}">
+            <li class="card">
+                <h1 class="card-title">
+                    {{ post.title }}
+                </h1>
+
+                <p class="card-date">
+                    {{ post.date | date_to_long_string: "ordinal" }}
+                </p>
+
+                <p class="card-description">
+                    {{ post.excerpt }}
+                </p>
+            </li>
+        </a>
         {% endfor %}
 
     </ul>
 
-    <a class="more-button" href="{{ site.url }}/blog/">More Posts</a>
+    <div class="button-container-right">
+        <a class="button button-right" href="{{ site.url }}/blog/">More Posts</a>
+    </div>
+
+</div>
+
+<!-- latest projects -->
+<div class="latest-posts">
+
+    <h1 class="section-title">Latest Projects</h1>
+
+    <ul class="card-list">
+
+    </ul>
+
+    <div class="button-container-right">
+        <a class="button button-right" href="{{ site.url }}/projects/">More Projects</a>
+    </div>
 
 </div>

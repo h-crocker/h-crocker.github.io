@@ -18,7 +18,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: $nav-foreground;
-  transition: $hover-anim;
+  transition: $hover-transition;
 }
 
 nav ul li {
@@ -49,7 +49,7 @@ nav ul li.active a {
   height: $tablet-top-nav-height;
   width: $full;
   box-shadow: $hide-top-nav-shadow;
-  transition: $box-shadow-anim;
+  transition: $box-shadow-transition;
 }
 
 // Desktop Navigation
@@ -63,7 +63,7 @@ nav ul li.active a {
   width: $full;
   height: $desktop-top-nav-height;
   box-shadow: $hide-top-nav-shadow;
-  transition: $box-shadow-anim;
+  transition: $box-shadow-transition;
 }
 
 .desktop-top-nav ul {

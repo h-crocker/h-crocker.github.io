@@ -36,11 +36,54 @@ header h1 {
   padding: 16px;
 }
 
-h2 {
+.content h1 {
   color: $content-foreground;
+  font-weight: $normal;
 }
 
+.section-title {
+  font-family: $sans-serif;
+}
 
+// Cards
+.card-list {
+  list-style: none;
+}
+
+.card-list a {
+  text-decoration: none;
+  color: $nav-foreground;
+}
+
+.card-title {
+  font-size: 1.5em;
+}
+
+.card-date {
+  font-family: $sans-serif;
+}
+
+// Buttons
+.button {
+  font-family: $sans-serif;
+  text-decoration: none;
+  color: $button-foreground;
+  background-color: $button-background;
+  padding: 7px 14px;
+  border-radius: 100px;
+  box-shadow: $button-shadow;
+  border-top: 1px solid #f1f1f1;
+  display: inline-block;
+  transition: $box-shadow-transition;
+}
+
+.button-container-right {
+  text-align: right;
+}
+
+.button:hover {
+  box-shadow: $button-shadow-hover;
+}
 
 // Media Queries
 @include all-phones {
