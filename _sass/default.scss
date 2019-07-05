@@ -57,11 +57,14 @@ header h1 {
 
 .card {
   color: $nav-foreground;
+  fill: $nav-foreground;
   background-color: $card-background;
   padding: 7px 14px;
   border-radius: 20px;
   margin-bottom: 1em;
   box-shadow: $card-shadow;
+  max-width: 400px;
+
 }
 
 .card-title {
@@ -70,6 +73,44 @@ header h1 {
 
 .card-date {
   font-family: $sans-serif;
+  font-size: 14px;
+  color: lighten($nav-foreground, 10%);
+}
+
+.card-description {
+  line-height: 1.5;
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.card-title, .card-date, .read-post {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-flex-align {
+  display: flex;
+  height: 24px;
+  width: $full;
+}
+
+.read-post {
+  font-size: 14px;
+  font-family: $sans-serif;
+  margin: auto;
+  margin-right: 8px;
+  color: $primary;
+}
+
+.card-flex-align .card-date {
+  margin: auto auto auto 0;
+}
+
+.card-flex-align svg {
+  fill: $primary;
 }
 
 // Buttons

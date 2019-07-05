@@ -19,13 +19,18 @@ portrait_rel: /assets/img/me.jpg
                     {{ post.title }}
                 </h1>
 
-                <p class="card-date">
-                    {{ post.date | date_to_long_string: "ordinal" }}
+                <p class="card-description">
+                    {{ post.excerpt | strip_html }}
                 </p>
 
-                <p class="card-description">
-                    {{ post.excerpt }}
-                </p>
+                <div class="card-flex-align">
+                    <p class="card-date">
+                        {{ post.date | date_to_long_string: "ordinal" }}
+                    </p>
+
+                    <p class="read-post">Read Full Post</p>
+                    {%- include svg/page-next.html -%}
+                </div>
             </li>
         </a>
         {% endfor %}
