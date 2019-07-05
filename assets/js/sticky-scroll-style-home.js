@@ -1,3 +1,5 @@
+let mDesktopNav = document.getElementsByClassName("desktop-top-nav");
+let mTabletNav = document.getElementsByClassName("tablet-top-nav");
 let mTabletHeader = document.getElementsByTagName("header");
 
 window.onscroll = function () {

@@ -12,9 +12,6 @@
         {%- include tablet_nav_top.html -%}
         {%- include desktop_nav_top.html -%}
 
-        <!-- SCRIPTS -->
-        <script src="{{ site.url }}/assets/js/sticky-scroll-style.js"></script>
-
         <!-- PAGE CONTENT -->
 
         <div class="wrapper {{ page.title | downcase }}">
@@ -28,6 +25,13 @@
         <!-- FOOTER -->
 
         {%- include footer.html -%}
+
+        <!-- SCRIPTS -->
+        {% if page.layout == "home" %}
+        <script src="{{ site.url }}/assets/js/sticky-scroll-style-home.js"></script>
+        {% else %}
+        <script src="{{ site.url }}/assets/js/sticky-scroll-style.js"></script>
+        {% endif %}
 
     </body>
 

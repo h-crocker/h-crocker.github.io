@@ -69,3 +69,9 @@ $box-shadow-transition: box-shadow linear 250ms;
     @content;
   }
 }
+
+@mixin blog {
+  .blog {
+    @content;
+  }
+}

@@ -33,7 +33,7 @@ header h1 {
 // Content
 .content {
   font-family: $serif;
-  padding: 16px;
+  padding: 0 16px 16px;
 }
 
 .content h1 {
@@ -51,13 +51,35 @@ header h1 {
   }
 }
 
-// Cards
-.post-list {
+// cards
+.post-list, .project-list {
   list-style: none;
   padding: 0;
   width: $full;
 }
 
+.square-card, .card {
+  background-color: $card-background;
+  box-shadow: $card-shadow;
+  border-radius: 20px;
+}
+
+// Projects
+.square-card {
+  background-color: $primary;
+  box-shadow: $primary-content-shadow;
+  display: inline-block;
+  height: 128px;
+  width: 128px;
+  margin-right: 8px;
+}
+
+.project-list {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// Posts
 .post-list a {
   text-decoration: none;
 }
@@ -67,13 +89,12 @@ header h1 {
 }
 
 .card {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
   color: $nav-foreground;
   fill: $nav-foreground;
-  background-color: $card-background;
   padding: 7px 14px;
-  border-radius: 20px;
   margin-bottom: 1em;
-  box-shadow: $card-shadow;
 }
 
 .card-title {
@@ -129,15 +150,19 @@ header h1 {
   }
 }
 
-@media (min-width: #{$phone-width}) and (max-width: #{700px - 1px}) {
-  .card-4 {
-    display: none;
+@include home {
+  @media (min-width: #{$phone-width}) and (max-width: #{700px - 1px}) {
+    .card-4 {
+      display: none;
+    }
   }
 }
 
-@include all-phones {
-  .card-3, .card-4 {
-    display: none;
+@include home {
+  @include all-phones {
+    .card-4 {
+      display: none;
+    }
   }
 }
 
