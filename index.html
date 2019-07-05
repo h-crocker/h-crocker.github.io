@@ -5,12 +5,27 @@ subtitle: Computer Scientist
 portrait_rel: /assets/img/me.jpg
 ---
 
+<!-- latest projects -->
+<div class="latest-projects">
+
+    <h1 class="section-title">Latest Projects</h1>
+
+    <ul class="project-list">
+
+    </ul>
+
+    <div class="button-container-right">
+        <a class="button button-right" href="{{ site.url }}/projects/">More Projects</a>
+    </div>
+
+</div>
+
 <!-- latest posts -->
 <div class="latest-posts">
 
     <h1 class="section-title">Latest Posts</h1>
 
-    <ul class="card-list">
+    <ul class="post-list">
 
         {% for post in site.posts limit:4 %}
         <a href="{{ site.url }}{{ post.url }}">
@@ -43,20 +58,5 @@ portrait_rel: /assets/img/me.jpg
 
 </div>
 
-<!-- latest projects -->
-<div class="latest-posts">
-
-    <h1 class="section-title">Latest Projects</h1>
-
-    <ul class="card-list">
-
-    </ul>
-
-    <div class="button-container-right">
-        <a class="button button-right" href="{{ site.url }}/projects/">More Projects</a>
-    </div>
-
-</div>
-
 <!-- scripts -->
-<!-- <script src="{{ site.url }}/assets/js/line-clamping.js"></script> -->
+<script src="{{ site.url }}/assets/js/single-post-layout-fix.js"></script>

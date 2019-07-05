@@ -52,14 +52,18 @@ header h1 {
 }
 
 // Cards
-.card-list {
+.post-list {
   list-style: none;
   padding: 0;
   width: $full;
 }
 
-.card-list a {
+.post-list a {
   text-decoration: none;
+}
+
+.single-post-hack {
+  column-count: 1 !important;
 }
 
 .card {
@@ -120,7 +124,7 @@ header h1 {
 }
 
 @media (min-width: 700px) {
-  .card-list {
+  .post-list {
     column-count: 2;
   }
 }
