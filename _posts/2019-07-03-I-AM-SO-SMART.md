@@ -6,4 +6,4 @@ categories:
 ---
 I am smart and cute
 I am the best 
-s m r t
+### S M R T
