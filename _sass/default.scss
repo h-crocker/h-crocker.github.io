@@ -48,11 +48,20 @@ header h1 {
 // Cards
 .card-list {
   list-style: none;
+  padding: 0;
 }
 
 .card-list a {
   text-decoration: none;
+}
+
+.card {
   color: $nav-foreground;
+  background-color: $card-background;
+  padding: 7px 14px;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  box-shadow: $card-shadow;
 }
 
 .card-title {
@@ -71,8 +80,6 @@ header h1 {
   background-color: $button-background;
   padding: 7px 14px;
   border-radius: 100px;
-  box-shadow: $button-shadow;
-  border-top: 1px solid #f1f1f1;
   display: inline-block;
   transition: $box-shadow-transition;
 }
@@ -82,7 +89,7 @@ header h1 {
 }
 
 .button:hover {
-  box-shadow: $button-shadow-hover;
+  color: $button-foreground;
 }
 
 // Media Queries
