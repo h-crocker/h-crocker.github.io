@@ -2,6 +2,9 @@
 @import "variables.scss";
 @import "display-sizes.scss";
 
+// Pygments Highlighting
+@import "syntax-highlighting.scss";
+
 // Styles
 @import "default.scss";
 @import "navigation.scss";

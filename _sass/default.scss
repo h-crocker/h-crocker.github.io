@@ -55,6 +55,18 @@ header h1 {
   }
 }
 
+// code blocks
+pre.highlight {
+  overflow-x: auto;
+  box-shadow: $card-shadow;
+  border-radius: 20px;
+  padding: 14px;
+}
+
+div.highlight {
+  background: $transparent;
+}
+
 // cards
 .post-list, .project-list {
   list-style: none;
