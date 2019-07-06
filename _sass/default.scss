@@ -86,12 +86,23 @@ div.highlight {
 }
 
 // Projects
+#mapoop {
+  background-image: url($url + "/assets/img/projects/mapoop-ios-photo.jpg");
+}
+
+#jekyll-theme {
+  background-image: url($url + "/assets/img/projects/jekyll-theme.jpg");
+}
+
+#jekyll-theme .project-text {
+  background-color: rgba($foreground, 0.3) !important;
+}
+
 .project-list {
   column-count: 2;
 }
 
 .project-card {
-  background-image: url($url + "/assets/img/projects/mapoop-ios-photo.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -114,12 +125,33 @@ div.highlight {
 
 .project-text p {
   padding-top: 7px;
+  line-height: 1.5;
   color: $background;
 }
 
-@include small-phone {
+.project-text a {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 7px;
+  text-decoration: none;
+  line-height: 24px;
+  height: 24px;
+}
+
+.project-text a p {
+  color: $primary;
+  padding: 0;
+}
+
+.project-text a svg {
+  margin-left: 5px;
+  fill: $primary;
+  display: inline-block;
+}
+
+@media (max-width: 420px) {
   .project-list {
-    column-count: 1;
+    column-count: 1 !important;
   }
   .project-4 {
     display: none;
@@ -145,6 +177,17 @@ div.highlight {
   .project-list {
     column-count: 4;
   }
+  .max-3-projects.project-list {
+    column-count: 3;
+  }
+}
+
+.max-1-projects.project-list {
+  column-count: 1;
+}
+
+.max-2-projects.project-list {
+  column-count: 2;
 }
 
 // Posts

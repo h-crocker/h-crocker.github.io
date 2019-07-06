@@ -12,10 +12,25 @@ portrait_rel: /assets/img/me.jpg
 
     <ul class="project-list">
         <!-- mapoop -->
-        <li class="project-card project-1">
+        <li class="project-card project-1" id="mapoop">
             <div class="project-text">
                 <h1>mapoop</h1>
                 <p>A public toilet map and review app for iOS and Android built using Cordova and Ionic.</p>
+                <a href="https://github.com/h-crocker/mapoop">
+                    <p>View on GitHub</p>
+                    {%- include svg/github.html -%}
+                </a>
+            </div>
+        </li>
+        <!-- jekyll theme -->
+        <li class="project-card project-2" id="jekyll-theme">
+            <div class="project-text">
+                <h1>Jekyll Theme</h1>
+                <p>The custom Jekyll theme built for this site! Created with Sass, HTML5, JavaScript, and Liquid.</p>
+                <a href="https://github.com/h-crocker/harrycrocker.com">
+                    <p>View on GitHub</p>
+                    {%- include svg/github.html -%}
+                </a>
             </div>
         </li>
     </ul>
@@ -66,3 +81,4 @@ portrait_rel: /assets/img/me.jpg
 
 <!-- scripts -->
 <script src="{{ site.url }}/assets/js/single-post-layout-fix.js"></script>
+<script src="{{ site.url }}/assets/js/project-layout-fix.js"></script>
