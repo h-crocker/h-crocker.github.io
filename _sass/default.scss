@@ -195,6 +195,14 @@ div.highlight {
   text-decoration: none;
 }
 
+@include blog {
+  @include all-phones {
+    .post-list {
+      margin-top: 0px;
+    }
+  }
+}
+
 .single-post-hack {
   column-count: 1 !important;
 }
