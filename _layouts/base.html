@@ -14,7 +14,7 @@
 
         <!-- PAGE CONTENT -->
 
-        <div class="wrapper {{ page.title | downcase }}">
+        <div class="wrapper {% if page.layout != "post" %}{{ page.title | downcase }}{% else %}post{% endif %}">
             <div class="content-wrapper">
 
                 {{ content }}

@@ -56,15 +56,20 @@ header h1 {
 }
 
 // code blocks
-pre.highlight {
+pre.highlight, .highlight pre {
   overflow-x: auto;
   box-shadow: $card-shadow;
   border-radius: 20px;
   padding: 14px;
+  background-color: $card-background !important;
 }
 
-div.highlight {
+div.highlight, figure.highlight {
   background: $transparent;
+}
+
+figure.highlight {
+  margin: 16px 24px;
 }
 
 // cards
@@ -308,10 +313,44 @@ div.highlight {
   color: $button-foreground;
 }
 
+.back-button svg {
+  fill: $foreground;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+@include phone {
+  .back-button {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+  }
+}
+
+@include tablet {
+  .back-button {
+    position: sticky;
+    top: 9px;
+    z-index: 100;
+    margin-top: -44px;
+    width: 32px;
+  }
+
+  .back-button svg {
+    fill: $nav-foreground;
+  }
+}
+
 // Media Queries
 @include all-phones {
   body {
     padding-bottom: $bottom-nav-height + 1em;
+  }
+
+  @include post {
+    h1:first-of-type {
+      margin-top: 0;
+    }
   }
 }
 
