@@ -1,6 +1,6 @@
 <header>
     <h1>
-        {% if page.layout == "home" or page.layout == "post" %}
+        {% if page.layout == "home" or page.layout == "post" or page.title == "page not found" %}
             {{ site.title }}
         {% else %}
             {{ page.title }}

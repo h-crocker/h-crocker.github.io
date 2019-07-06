@@ -1,7 +1,7 @@
 <nav class="desktop-top-nav top-nav">
     <div class="nav-wrapper">
         <h1>
-            {% if page.layout == "home" or page.layout == "post" %}
+            {% if page.layout == "home" or page.layout == "post" or page.title == "page not found" %}
                 {{ site.title }}
             {% else %}
                 {{ page.title }}
