@@ -38,10 +38,11 @@ header h1 {
   }
 
   .subheader img {
-    width: $subheader-height - 32px;
-    height: $subheader-height - 32px;
-    box-shadow: $main-content-shadow-light;
+    width: $subheader-height - 32px - 8px;
+    height: $subheader-height - 32px - 8px;
+    //box-shadow: $main-content-shadow-light;
     border-radius: 75px;
+    border: solid 4px $content-foreground-light;
     margin: auto 16px auto auto;
   }
 }
@@ -179,7 +180,7 @@ header h1 {
     margin-top: -19px;
     background-color: $secondary;
     box-shadow: $secondary-content-shadow;
-    border-top: 1px solid lighten($secondary, 10%);
+    border-top: 1px solid lighten($secondary, 5%);
   }
 
   .subheader-skills svg {
