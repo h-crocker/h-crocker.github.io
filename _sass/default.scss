@@ -74,25 +74,77 @@ div.highlight {
   width: $full;
 }
 
-.square-card, .card {
+.project-card, .card {
   background-color: $card-background;
   box-shadow: $card-shadow;
   border-radius: 20px;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  color: $nav-foreground;
+  fill: $nav-foreground;
+  margin-bottom: 1em;
 }
 
 // Projects
-.square-card {
-  background-color: $primary;
-  box-shadow: $primary-content-shadow;
-  display: inline-block;
-  height: 128px;
-  width: 128px;
-  margin-right: 8px;
+.project-list {
+  column-count: 2;
 }
 
-.project-list {
+.project-card {
+  background-image: url($url + "/assets/img/projects/mapoop-ios-photo.jpg");
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  white-space: nowrap;
+}
+
+.project-text {
+  background-color: rgba($foreground, 0.5);
+  margin: 0;
+  padding: 14px;
+}
+
+.project-text h1, .project-text p {
+  margin: 0;
+}
+
+.project-text h1 {
+  font-size: 1.25em;
+  color: $background;
+}
+
+.project-text p {
+  padding-top: 7px;
+  color: $background;
+}
+
+@include small-phone {
+  .project-list {
+    column-count: 1;
+  }
+  .project-4 {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .project-text h1 {
+    font-size: 1.5em;
+  }
+  .project-list {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 700px) and (max-width: #{$tablet-width - 1px}) {
+  .project-4 {
+    display: none;
+  }
+}
+
+@include desktop {
+  .project-list {
+    column-count: 4;
+  }
 }
 
 // Posts
@@ -105,12 +157,7 @@ div.highlight {
 }
 
 .card {
-  page-break-inside: avoid;
-  break-inside: avoid-column;
-  color: $nav-foreground;
-  fill: $nav-foreground;
   padding: 7px 14px;
-  margin-bottom: 1em;
 }
 
 .card-title {
