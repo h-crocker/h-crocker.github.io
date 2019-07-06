@@ -1,3 +1,22 @@
 <footer>
-
+    <div class="footer-content">
+        <div class="footer-left">
+            <h1>{{ site.title }}</h1>
+            <h2><a href="{{ site.url }}">{{ site.url }}</a></h2>
+        </div>
+        <div class="footer-right">
+            <a class="footer-contact" href="https://github.com/h-crocker">
+                <p>GitHub</p>
+                {% include svg/github.html %}
+            </a>
+            <a class="footer-contact" href="www.linkedin.com/in/harry-crocker-10ab5a189">
+                <p>LinkedIn</p>
+                {% include svg/linkedin.html %}
+            </a>
+            <a class="footer-contact" href="mailto: harry.crocker8@gmail.com">
+                <p>Email</p>
+                {% include svg/email.html %}
+            </a>
+        </div>
+    </div>
 </footer>
