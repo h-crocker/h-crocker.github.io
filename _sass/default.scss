@@ -203,6 +203,14 @@ div.highlight {
   }
 }
 
+@include projects {
+  @include all-phones {
+    .project-list {
+      margin-top: 0px;
+    }
+  }
+}
+
 .single-post-hack {
   column-count: 1 !important;
 }
