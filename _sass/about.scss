@@ -1,0 +1,63 @@
+.about-header {
+  margin: 16px 0;
+}
+
+@include all-phones {
+  .about-header {
+    margin-top: 0;
+  }
+}
+
+.about-image {
+  width: 128px;
+  height: 128px;
+  float: left;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.about-image img {
+  width: $full;
+  height: $full;
+  border-radius: 20px;
+  box-shadow: $card-shadow;
+}
+
+.about-title {
+  margin: 0;
+  font-size: 2em;
+}
+
+.about-description {
+  line-height: 1.5;
+}
+
+.title-wrapper {
+  height: 128px;
+  width: $full;
+}
+
+.title-wrapper .about-title{
+  height: inherit;
+  vertical-align: bottom;
+  display: table-cell;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+@media (max-width: 379px) {
+  .about-image {
+    display: none;
+  }
+  .title-wrapper {
+    height: unset;
+    margin-bottom: 16px;
+  }
+  .about-title {
+    font-size: 2em;
+    line-height: unset;
+  }
+  .about-description {
+    margin-top: 0;
+  }
+}
