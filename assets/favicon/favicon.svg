@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333332 4.2333335"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="favicon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="31.678384"
+     inkscape:cx="4.4264368"
+     inkscape:cy="8.6846357"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1002"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1366" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.76665)">
+    <path
+       style="fill:#2a2d34;fill-opacity:1;stroke-width:0.99999994"
+       d="M 4 1 C 2.3379709 1 1 2.3379709 1 4 L 1 12 C 1 13.662029 2.3379709 15 4 15 L 12 15 C 13.662029 15 15 13.662029 15 12 L 15 4 C 15 2.3379709 13.662029 1 12 1 L 4 1 z M 4 3 L 7 3 L 7 3.9003906 L 6 4 L 6 7.5 L 10 7.5 L 10 4 L 9 3.9003906 L 9 3 L 10 3 L 11 3 L 12 3 L 12 3.9003906 L 11 4 L 11 12 L 12 12.099609 L 12 13 L 9 13 L 9 12.099609 L 10 12 L 10 8.5 L 6 8.5 L 6.0390625 11.941406 L 7 12.099609 L 7 13 L 4 13 L 4 12.099609 L 4.9335938 11.941406 L 5 4 L 4 3.9003906 L 4 3 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,292.76665)"
+       id="rect823" />
+  </g>
+</svg>
