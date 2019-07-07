@@ -301,6 +301,13 @@ figure.highlight {
   }
 }
 
+// Blog Posts
+@include post {
+  a {
+    color: $primary;
+  }
+}
+
 // Buttons
 .button {
   font-family: $sans-serif;
