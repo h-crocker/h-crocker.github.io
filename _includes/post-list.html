@@ -1,0 +1,24 @@
+<ul class="post-list">
+    {% for post in site.posts limit:4 %}
+    <a href="{{ site.url }}{{ post.url }}">
+        <li class="card card-{{ forloop.index }}">
+            <h1 class="card-title">
+                {{ post.title }}
+            </h1>
+
+            <p class="card-description">
+                {{ post.excerpt | strip_html }}
+            </p>
+
+            <div class="card-flex-align">
+                <p class="card-date">
+                    {{ post.date | date_to_long_string: "ordinal" }}
+                </p>
+
+                <p class="read-post">Read Full Post</p>
+                {%- include svg/page-next.html -%}
+            </div>
+        </li>
+    </a>
+    {% endfor %}
+</ul>

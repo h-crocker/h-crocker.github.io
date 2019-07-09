@@ -4,35 +4,11 @@ title: Home
 subtitle: Computer Scientist
 portrait_rel: /assets/img/me.jpg
 ---
-<!-- latest projects -->
 <div class="latest-projects">
 
     <h1 class="section-title">Latest Projects</h1>
 
-    <ul class="project-list">
-        <!-- mapoop -->
-        <li class="project-card project-1" id="mapoop">
-            <div class="project-text">
-                <h1>mapoop</h1>
-                <p>A public toilet map and review app for iOS and Android built using Cordova and Ionic.</p>
-                <a href="https://github.com/h-crocker/mapoop">
-                    <p>View on GitHub</p>
-                    {%- include svg/github.html -%}
-                </a>
-            </div>
-        </li>
-        <!-- jekyll theme -->
-        <li class="project-card project-2" id="jekyll-theme">
-            <div class="project-text">
-                <h1>Jekyll Theme</h1>
-                <p>The custom Jekyll theme built for this site! Created with Sass, HTML5, JavaScript, and Liquid.</p>
-                <a href="https://github.com/h-crocker/harrycrocker.com">
-                    <p>View on GitHub</p>
-                    {%- include svg/github.html -%}
-                </a>
-            </div>
-        </li>
-    </ul>
+    {%- include project-list -%}
 
     <div class="button-container-right">
         <a class="button button-right" href="{{ site.url }}/projects/">More Projects</a>
@@ -40,37 +16,11 @@ portrait_rel: /assets/img/me.jpg
 
 </div>
 
-<!-- latest posts -->
 <div class="latest-posts">
 
     <h1 class="section-title">Latest Posts</h1>
 
-    <ul class="post-list">
-
-        {% for post in site.posts limit:4 %}
-        <a href="{{ site.url }}{{ post.url }}">
-            <li class="card card-{{ forloop.index }}">
-                <h1 class="card-title">
-                    {{ post.title }}
-                </h1>
-
-                <p class="card-description">
-                    {{ post.excerpt | strip_html }}
-                </p>
-
-                <div class="card-flex-align">
-                    <p class="card-date">
-                        {{ post.date | date_to_long_string: "ordinal" }}
-                    </p>
-
-                    <p class="read-post">Read Full Post</p>
-                    {%- include svg/page-next.html -%}
-                </div>
-            </li>
-        </a>
-        {% endfor %}
-
-    </ul>
+    {%- include post-list -%}
 
     <div class="button-container-right">
         <a class="button button-right" href="{{ site.url }}/blog/">More Posts</a>
