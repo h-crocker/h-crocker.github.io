@@ -24,12 +24,14 @@
 }
 
 .about-title {
-  margin: 0;
+  margin: 0 0 12px;
+  padding-top: 16px;
   font-size: 2em;
 }
 
 .about-description {
   line-height: 1.5;
+  color: $foreground;
 }
 
 .title-wrapper {
@@ -43,9 +45,18 @@
   display: table-cell;
   font-size: 56px;
   line-height: 56px;
+  padding-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 379px) {
+  .title-wrapper .about-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 329px) {
   .about-image {
     display: none;
   }
@@ -59,5 +70,95 @@
   }
   .about-description {
     margin-top: 0;
+  }
+}
+
+.about-skills-list-title {
+  font-size: 1.25em;
+  margin-bottom: 12px;
+  color: $foreground;
+}
+
+.about-skills-list {
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  width: $full;
+  margin-bottom: 4px;
+}
+
+.skill {
+  background-color: $primary;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 100px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+.skill svg {
+  fill: $background;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skill p {
+  color: $background;
+  font-family: $sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+  margin: 1px 2px 0 4px;
+}
+
+.about-edu-item {
+  height: 150px;
+  display: flex;
+  background-color: $card-background;
+  box-shadow: $card-shadow;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.about-edu-item-info {
+  margin-left: 16px;
+  padding-right: 16px;
+}
+
+.about-edu-item h2 {
+  color: $foreground;
+}
+
+.about-edu-item h3 {
+  color: $primary;
+}
+
+.about-edu-item h4 {
+  color: $nav-foreground;
+}
+
+.about-edu-item img {
+  height: 150px - 32px;
+  width: 150px - 32px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 620px) {
+  .about-edu-item {
+    white-space: unset;
+    overflow: unset;
+    height: unset;
+    text-align: center;
+  }
+
+  .about-edu-item-info {
+    width: $full;
+  }
+
+  .about-edu-item img {
+    display: none;
   }
 }
