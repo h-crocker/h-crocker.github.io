@@ -110,6 +110,10 @@ figure.highlight {
   background-color: rgba($foreground, 0.3) !important;
 }
 
+#landmark {
+  background-image: url($url + "/assets/img/projects/landmark.jpg");
+}
+
 .project-list {
   column-count: 2;
 }
