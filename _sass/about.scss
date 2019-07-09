@@ -162,3 +162,40 @@
     display: none;
   }
 }
+
+.about-edu a {
+  text-decoration: none;
+}
+
+.about-link-icon {
+  margin: auto 12px 12px auto;
+}
+
+.about-link-icon p {
+  color: $primary;
+  font-family: $sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 4px 0 0;
+}
+
+.about-link-icon svg {
+  fill: $primary;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 785px) {
+  .about-link-icon p {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .about-edu-item-info {
+    padding-right: 0;
+    margin-left: 24px + 12px;
+  }
+}
