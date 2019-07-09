@@ -166,8 +166,10 @@ figure.highlight {
   .project-list {
     column-count: 1 !important;
   }
-  .project-4 {
-    display: none;
+  @include home {
+    .project-4 {
+      display: none;
+    }
   }
 }
 
@@ -180,9 +182,11 @@ figure.highlight {
   }
 }
 
-@media (min-width: 700px) and (max-width: #{$tablet-width - 1px}) {
-  .project-4 {
-    display: none;
+@include home {
+  @media (min-width: 700px) and (max-width: #{$tablet-width - 1px}) {
+    .project-4 {
+      display: none;
+    }
   }
 }
 
