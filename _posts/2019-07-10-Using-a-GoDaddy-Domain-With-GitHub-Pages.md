@@ -4,8 +4,6 @@ title:  Using a GoDaddy Domain With GitHub Pages
 date: 2019-07-10 12:58 
 categories: tutorial web
 ---
-# Using a GoDaddy Domain With GitHub Pages
-
 GitHub Pages is an excellent way to setup a static site, or a Jekyll blog and the default domains provided by GitHub 
 are perfectly fine. Custom domains however are a cheap way to increase branding on your site while still being able to 
 rely on GitHub for free hosting. 
